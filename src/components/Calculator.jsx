@@ -67,7 +67,7 @@ function Calculator() {
                         <br />
                         Purchase <input type="number" value={purchase} onChange={(e) => setpurchase(e.target.value)} placeholder='Value' className='val' />
                         <br />
-                        Profit: {purchase - diamondct || 0}
+                        Profit: {(  diamondct-purchase)*diamond || 0}
                     </p>
                     <div className='make-center'><button className='btn' onClick={handlereset}>Reset All</button></div>
                 </div>
